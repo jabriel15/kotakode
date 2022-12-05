@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +9,12 @@
     <title>TanyaKode.com</title>
 
     <!-- ==== STYLE.CSS ==== -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-grid.css">
 
     <!-- ====  REMIXICON CDN ==== -->
     <link
@@ -27,7 +34,7 @@
       <!-- ==== NAVBAR ==== -->
       <nav class="nav">
         <div class="logo">
-          <h2>TanyaKode.</h2>
+          <h2>TanyaKode</h2>
         </div>
 
         <div class="nav_menu" id="nav_menu">
@@ -43,7 +50,7 @@
               <a href="#" class="nav_menu_link">about</a>
             </li>
             <li class="nav_menu_item">
-              <a href="register.php" class="nav_menu_link">Get Started</a>
+              <a href="login.php" class="nav_menu_link">Get Started</a>
             </li>
           </ul>
         </div>
@@ -67,15 +74,16 @@
             </p>
 
             <div class="btn_wrapper">
-              <button class="btn get_started_btn">
-                Tanya ? 
-              </button>
-              
+              <div class="btn get_started_btn">
+                <div class="vertical-center">
+                  <a class="" href="login.php">Tanya?</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="grid-item-2">
             <div class="team_img_wrapper">
-              <img src="./img/coding.jpg" alt="team-img" />
+              <img src="assets/img/coding.jpg" alt="team-img" />
             </div>
           </div>
         </div>
@@ -84,11 +92,11 @@
 
     <!-- About section -->
     <section class="about">
-      <img src="img/img_about.jpg" alt="">
+      <img src="assets/img/img_about.jpg" alt="">
       <div class="description">
         <h2 class="child-heading">Apa itu <span>TanyaKode</span> ?</h2>
         <p class="info-text">
-          KotakKode merupakan forum diskusi untuk memberikan kemudahan bagi para programmer saat menemukan error pada code mereka. 
+          TanyaKode merupakan forum diskusi untuk memberikan kemudahan bagi para programmer saat menemukan error pada code mereka. 
         </p>
       </div>
     </section>
@@ -133,7 +141,7 @@
         <div class="grid-cols-4-footer">
           <div class="">
             <div class="footer-image">
-            <img src="img/footer-removebg.png">
+            <img src="assets/img/footer-removebg.png">
             </div>
           </div>
 
@@ -171,7 +179,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- ==== GSAP CDN ==== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!-- ==== SCRIPT.JS ==== -->
-    <script src="./script.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
